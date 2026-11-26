@@ -5,8 +5,8 @@ A curated, developmental-stage guide to animated films and series for every ageâ
 ## Links
 
 - **Live:** [anime-ages.psyverse.fun](https://anime-ages.psyverse.fun)
-- **Vercel:** Pending deployment
-- **GitHub:** [github.com/gewenbo888/anime-ages](https://github.com/gewenbo888/anime-ages)
+- **Vercel:** [anime-ages.vercel.app](https://anime-ages.vercel.app)
+- **GitHub:** [github.com/gewenbo01-debug/anime-ages](https://github.com/gewenbo01-debug/anime-ages)
 
 ## Stack
 
