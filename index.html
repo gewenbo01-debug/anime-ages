@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrameByAge · 全年龄段动画片指南 | Animation Guide by Age</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23E85D3F'/><text x='50%' y='53%' font-size='18' font-family='Georgia,serif' font-weight='bold' text-anchor='middle' dominant-baseline='central' fill='%23FFFBF5'>F</text></svg>">
+
+  <!-- SEO · GEO -->
+  <meta name="description" content="A curated, developmental-stage guide to animated films and series for every age—from 0–2 sensory classics and 2–5 preschool favorites like Peppa Pig & Bluey to teen coming-of-age anime and adult philosophical animation." />
+  <meta name="keywords" content="动画片推荐, 分龄动画, 儿童动画, 小猪佩奇, 布鲁伊, 宫崎骏, 亲子共赏, animation by age, kids cartoons, anime guide, Psyverse" />
+  <meta name="author" content="Gewenbo" />
+  <link rel="canonical" href="https://anime-ages.psyverse.fun/" />
+  <link rel="alternate" hreflang="en" href="https://anime-ages.psyverse.fun/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://anime-ages.psyverse.fun/" />
+  <link rel="alternate" hreflang="x-default" href="https://anime-ages.psyverse.fun/" />
+  <meta property="og:title" content="FrameByAge · Animation Guide by Age" />
+  <meta property="og:description" content="From 0–2 sensory rhythms and Peppa Pig to Avatar, Studio Ghibli, and adult philosophical cinema—discover the right animation for every stage of growth." />
+  <meta property="og:url" content="https://anime-ages.psyverse.fun/" />
+  <meta property="og:site_name" content="Psyverse" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" href="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FrameByAge · 全年龄段动画片指南" />
+  <meta name="twitter:description" content="Curated animation recommendations across 7 developmental stages, with screen-time guidance and parent notes." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#E85D3F" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FrameByAge · Animation Guide by Age",
+    "description": "A curated, developmental-stage guide to animated films and series for every age.",
+    "url": "https://anime-ages.psyverse.fun/",
+    "inLanguage": ["zh-CN", "en"],
+    "author": { "@type": "Person", "name": "Gewenbo", "url": "https://psyverse.fun/" },
+    "publisher": { "@type": "Organization", "name": "Psyverse", "url": "https://psyverse.fun/" }
+  }
+  </script>
+  <!-- /SEO · GEO -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Analytics -->
+  <script src="https://analytics-dashboard-two-blue.vercel.app/tracker.js" defer></script>
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        <span>FRAME BY AGE · 全年龄段动画片策展指南</span>
+      </div>
+      <h1>每一岁，都有一帧<br /><em>刚刚好</em>的动画世界</h1>
+      <p class="hero-sub">
+        从 0–2 岁的慢节奏感官律动、2–4 岁《小猪佩奇》《布鲁伊》的语言与日常启蒙，到少年时代的冒险思辨与成年人的哲思杰作。按认知发展阶段精选 <strong>28 部</strong> 高分动画，附单集时长、核心看点与家长陪看建议。
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat-pill"><strong>7</strong> 个成长阶段</div>
+        <div class="stat-pill"><strong>28</strong> 部精选作品</div>
+        <div class="stat-pill"><strong>AAP</strong> 科学护眼与屏幕时间参考</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Age Timeline Selector -->
+    <section class="controls-panel" aria-label="年龄段与主题筛选">
+      <div class="age-tabs" id="ageTabs" role="tablist">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="filter-row">
+        <div class="tag-filters" id="tagFilters">
+          <button class="tag-btn active" data-tag="all">全部主题</button>
+          <button class="tag-btn" data-tag="语言启蒙">语言启蒙</button>
+          <button class="tag-btn" data-tag="社交情商">社交情商</button>
+          <button class="tag-btn" data-tag="亲子共赏">亲子共赏</button>
+          <button class="tag-btn" data-tag="科学科普">科学科普</button>
+          <button class="tag-btn" data-tag="冒险想象">冒险想象</button>
+          <button class="tag-btn" data-tag="审美哲思">审美哲思</button>
+        </div>
+
+        <label class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" id="searchInput" placeholder="搜索片名、国家、关键词（如 佩奇 / 宫崎骏）" />
+        </label>
+      </div>
+    </section>
+
+    <!-- Active Stage Banner -->
+    <section class="stage-brief" id="stageBrief" aria-live="polite"></section>
+
+    <!-- Animation Cards Grid -->
+    <section class="cards-grid" id="cardsGrid"></section>
+
+    <!-- Empty State -->
+    <div class="empty-state hidden" id="emptyState">
+      <p>没有找到匹配的动画片，试试切换年龄段或清空搜索词。</p>
+      <button class="reset-btn" id="resetFilters">重置所有筛选</button>
+    </div>
+
+    <!-- Screen Time & Co-viewing Guide -->
+    <section class="guide-section">
+      <div class="guide-header">
+        <span class="guide-kicker">PARENTS' FIELD NOTES</span>
+        <h2>分龄看动画的 4 个黄金原则</h2>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card">
+          <div class="guide-num">01</div>
+          <h3>18 个月前尽量不看，2–5 岁重“慢”不重“快”</h3>
+          <p>低龄幼儿大脑尚在建立现实因果，画面切换过快（如每秒切镜的快节奏短片）容易过度刺激注意力。优先选择色彩柔和、台词清晰、留白充足的慢节奏动画。</p>
+        </article>
+        <article class="guide-card">
+          <div class="guide-num">02</div>
+          <h3>控制单次时长，善用“一集一停”</h3>
+          <p>2–5 岁每天累计屏幕时间建议不超过 1 小时，单次 10–15 分钟（正好是 2–3 集《小猪佩奇》或《布鲁伊》）。提前约定“看完这集就去玩积木”，减少拉扯。</p>
+        </article>
+        <article class="guide-card">
+          <div class="guide-num">03</div>
+          <h3>“共视（Co-viewing）”比动画本身更重要</h3>
+          <p>家长陪在旁边顺手聊两句——“佩奇为什么不开心？”“如果你是布鲁伊会怎么玩？”——能把被动观看转化为语言输入和情绪认知练习。</p>
+        </article>
+        <article class="guide-card">
+          <div class="guide-num">04</div>
+          <h3>原声与中文切换，自然磨耳朵</h3>
+          <p>像《小猪佩奇》《布鲁伊》《Hey Duggee》这类日常对话密度极高的英澳动画，先看中文理解剧情，再换英文原声二刷，是最无痛的英语语感启蒙。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>FrameByAge · 献给每一段成长的银幕时光</p>
+      <p>Part of <a href="https://psyverse.fun/" target="_blank" rel="noopener">Psyverse</a> by Gewenbo</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
